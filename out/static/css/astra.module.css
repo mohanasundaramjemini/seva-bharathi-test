@@ -1,0 +1,395 @@
+/* *********runforAstra************** */
+.astraBlock {
+    background: #EDEEFF;
+    float: left;
+    width: 100%;
+    padding: 26px 10% 26px 10%;
+    box-sizing: border-box;
+}
+
+.astraBlock p {
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #0E0D0D;
+    margin: 33px 0;
+    width: calc(100% - 309px)
+}
+
+.right {
+    float: right;
+}
+
+/******************media ****************/
+@media (max-width:1340px) {
+    .header ul {
+        margin: 28px 4.5% 0 0
+    }
+  }
+  
+  @media (max-width:1300px) {
+    .header ul {
+        margin: 28px 2% 0 0
+    }
+  
+    .count {
+        padding: 66px 5%
+    }
+  
+    .contentBlock {
+        padding: 78px 5%;
+    }
+  
+    .banner {
+        padding: 228px 0 87px 5%;
+    }
+  
+    .emailContact {
+        margin: 0;
+        width: 96%;
+    }
+  
+    .astraBlock {
+        padding: 26px 5%;
+    }
+  
+    .joinMission {
+        padding: 50px 5%;
+    }
+  
+    .sponsors {
+        padding: 80px 5%;
+    }
+  
+    .footer {
+        padding: 40px 0px 40px 5%;
+    }
+  
+    .couponDiscount {
+        padding: 13px 20px;
+    }
+  }
+  
+  @media (max-width:1200px) {
+    .header ul li a {
+        margin: 0 14px;
+    }
+  
+    .stadiumRun {
+        left: 1%;
+        width: 98%
+    }
+  
+    .couponDiscount {
+        padding: 7px 10px;
+        display: block !important;
+        margin: 0 auto;
+        width: 80px;
+    }
+  }
+  
+  @media (max-width:1150px) {
+    .header ul li a {
+        margin: 0 10px;
+    }
+    .registration_message {width:47%}
+  }
+  
+  @media (max-width:1040px) {
+    .header ul li a {
+        margin: 0 7px;
+    }
+  
+    .header ul {
+        padding: 28px 0% 0 0;
+    }
+  
+    .header {
+        padding: 19px 2% 12px 2%;
+    }
+  
+    .greyButton {
+        float: right;
+        margin: 0 0 10px 0
+    }
+  
+    .redButton {
+        float: right;
+    }
+    .reg_help {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .registration .info {
+        width: calc(100% - 30px);
+        margin: 0;
+    }
+    .run_success{margin:13px 0 10px 0}
+    .registration_message {
+        width:calc(100% - 60px);
+        float: left; background: #EEF7FF; padding: 26px 30px;
+    }
+    .registration_message h5{text-align: center;}
+    ul#order li{width:100%}
+  }
+  
+  @media(max-width:1023px) {
+  
+    .eventGallery .leftBlock img,
+    .eventGallery .rightBlock img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0
+    }
+  
+    .leftBlock,
+    .rightBlock {
+        width: 100%;
+        margin: 0 0 20px 0
+    }
+  
+    .eventGallery .leftBlock {
+        width: 100%;
+        margin: 0;
+    }
+  
+    .emailContact form .formLabel {
+        width: 100%;
+        margin: 0 0% 20px 0
+    }
+  
+    .count ul li {
+        width: 50%;
+        margin: 0 0 10px 0
+    }
+  
+    .sponsors ul#sponserList li {
+        width: 45%;
+        margin: 0 4% 20px 0
+    }
+    
+  }
+  
+  @media (max-width:768px) {
+  
+    .astraBlock p,
+    .astraBlock .right {
+        width: 100%;
+    }
+  
+    .astraBlock .right img {
+        display: block;
+        margin: 0 auto 20px auto
+    }
+  
+    /* .joinMission .left{width:100%} */
+    .sponsors ul#sponserList li {
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+  
+    .stadiumRun table td {
+        float: left;
+        width: 100%
+    }
+  
+    .stadiumRun table td:first-child {
+        display: none;
+    }
+  
+    .stadiumRun table tr:last-child td:first-child {
+        display: block;
+    }
+  
+    .greyButton {
+        float: left;
+        margin: 0 10px 0px 0
+    }
+  
+    .registerFor ul li a {
+        margin: 0 0 10px 0
+    }
+  
+    .count {
+        display: none;
+    }
+  
+    .eventGallery .leftBlock img {
+        display: none;
+    }
+  
+    .eventGallery .rightBlock img {
+        display: none;
+    }
+  
+    .eventGallery .rightBlock img.last {
+        display: block;
+        height: 216px;
+        margin: 0;
+    }
+  
+    .count {
+        padding: 66px 5%
+    }
+  
+    .contentBlock {
+        padding: 60px 5%;
+    }
+  
+    .banner {
+        padding: 149px 0 60px 5%;
+    }
+  
+    .sponsors {
+        padding: 60px 5%;
+    }
+  
+    .eventGallery a {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 32px;
+        line-height: 200px;
+    }
+  
+    .joinMission p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+  
+    .joinMission .right {
+        float: right;
+    }
+  
+    .joinMission .right img {
+        width: 126px;
+        float: right;
+    }
+  
+    .sponsors span,
+    .sponserPatners,
+    .eventGallery span,
+    .registerFor ul li a img:last-child,
+    .powerdBy {
+        display: none;
+    }
+  
+    .sponsors ul#sponserList li {
+        display: none
+    }
+  
+    .sponsors ul#sponserList li:first-child {
+        display: block;
+    }
+  
+    .sponsors h4,
+    .eventGallery h4,
+    .contentBlock span {
+        background: #DD4069;
+        font-size: 16px;
+        line-height: 70px;
+        font-weight: 700;
+        color: #FFFFFF;
+        padding: 0 40px 0 20px;
+        width: auto;
+        margin: 0 0 40px 0
+    }
+  
+    .emailContact form .formLabel.registerFor {
+        width: 100%;
+    }
+  
+    .registerFor ul li a img {
+        display: block;
+        margin: 0 auto 10px auto
+    }
+  
+    .registerFor ul {
+        width: 317px;
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+  
+    .registerFor ul li a {
+        background: #fff;
+        padding: 20px 9px;
+    }
+  
+    .registerFor ul li a span {
+        font-size: 12px;
+    }
+  
+    .logo {
+        display: none;
+    }
+  
+    .header span {
+        float: left;
+    }
+  
+    .stadiumRun .run ul {
+        width: 97%;
+    }
+  
+    .header ul {
+        position: absolute;
+        left: 0;
+        top: 76px;
+        width: 100%;
+        margin: 0;
+        z-index: 99;
+        background: linear-gradient(348.37deg, #D2D2D2 -9.53%, rgba(210, 210, 210, 0) 44.78%);
+    }
+  
+    .header ul li {
+        width: 100%;
+        width: 100%;
+        margin: 0 0 3px 0;
+        background: #fff;
+    }
+  
+    .header ul li a {
+        padding: 24px 12px 12px 42px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        border-left: 4px solid #fff;
+        border-bottom: 0px none;
+        margin: 0;
+        width: calc(100% - 27px);
+    }
+  
+    .header ul li a.active {
+        border-left: 4px solid #A72F51;
+        border-bottom: 0px none;
+    }
+  
+    .mobile_menu {
+        float: right;
+        display: block;
+        margin: 18px 0 0 0
+    }
+  
+    .header ul li.mobile {
+        display: block;
+        background: #A72F51;
+        text-align: center;
+    }
+  
+    .header ul li.mobile a {
+        border: 0px none
+    }
+  
+    .header ul {
+        display: none
+    }
+  
+    .header ul.mobile_menu_response {
+        display: block;
+    }
+  
+    
+  }
