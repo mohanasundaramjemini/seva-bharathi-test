@@ -120,8 +120,8 @@ form {
   font-size: 45px;
   font-weight: 700;
   color: #ffffff;
-  line-height: 66px;
-  padding: 0px 0px 60px 32px;
+  line-height: 40px;
+  margin: 30px 0px 40px 0px;
 }
 
 .banner .bannerTxt {
@@ -1080,7 +1080,7 @@ form {
   line-height: 24px;
   font-weight: 400;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .breadcrumb {
@@ -1603,7 +1603,48 @@ ul#order li b {
   margin-right: 17px;
 }
 
+.banner h2 {
+  width: 545.5px;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+ /* margin: 0 10%; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+.banner h2::after{
+  content: "";
+  width: 5px;
+  height: 10px;
+} 
+
 /******************media start From Here ****************/
+@media (max-width: 1440px){
+  
+  .registerFor ul li a span{
+    margin: 0 6px 0 6px;
+
+  }
+  .registerFor ul li a{
+    padding: 20px 6px;
+  }
+}
 @media (max-width: 1340px) {
   .header ul {
     margin: 28px 4.5% 0 0;
@@ -1714,7 +1755,7 @@ ul#order li b {
 
   .redButton {
     float: right;
-    padding: 9px 19px;
+    padding: 9px 11px;
   }
   .reg_help {
     width: 100%;
@@ -1749,6 +1790,10 @@ ul#order li b {
   .emailContact form .formLabel .numberIncrease input {
     width: calc(100% - 164px);
     text-align: center;
+  }
+  .registerFor ul li a {
+    margin: 0 6px 0 0;
+    padding: 20px 4px;
   }
 }
 
@@ -2052,7 +2097,15 @@ ul#order li b {
   .footer {
     padding: 40px 20px;
   }
-  .banner h2{ padding: 0px 0px 60px 0px;}
+  .banner h2{ 
+    /* padding: 0px 0px 60px 0px; */
+    width: 160px;
+    font-size: medium;
+  }
+  .panInput input{
+    width: calc(43% - 0px);
+    margin-right: 17px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -2095,6 +2148,8 @@ ul#order li b {
     background-repeat: no-repeat;
     border-radius: 10px;
   }
+  .emailInput{width:100%; margin: 0 0 10px 0;}
+  .mobileInput{width:calc(100% - 48px)}
 }
 @media (max-width: 375px) {
   .stadiumRun {
@@ -2120,6 +2175,10 @@ ul#order li b {
   .panInput input {
     width: calc(100% - 46px);
   }
+  .banner h2{
+    width: 160px;
+    font-size: medium;
+  }
 }
 @media (max-width: 360px) {
   .stadiumRun {
@@ -2139,5 +2198,9 @@ ul#order li b {
   }
   .footer {
     padding: 10px;
+  }
+  .banner h2{
+    width: 160px;
+    font-size: medium;
   }
 }
