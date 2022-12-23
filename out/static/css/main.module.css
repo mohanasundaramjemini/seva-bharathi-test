@@ -1095,11 +1095,12 @@ form {
 
 .breadcrumb ul li {
   float: left;
-  color: #dd4069;
+  color: #B65A5A;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
   margin: 0 4px 0 0;
+  padding-top: 4px;
 }
 
 .breadcrumb ul li a {
@@ -1633,6 +1634,14 @@ ul#order li b {
   width: 5px;
   height: 10px;
 } 
+.stadiumRun .locationDetails {
+  background-color: #fff6f6;
+  padding: 2px;
+  border-radius: 4px 4px 0 0;
+  /* max-width: auto; */
+  font-size: 14px;
+
+}
 
 /******************media start From Here ****************/
 @media (max-width: 1440px){
@@ -2136,6 +2145,9 @@ ul#order li b {
   }
   .panInput input {
     width: calc(100% - 46px);
+  }
+  .stadiumRun .locationDetails .locationSubDetails ul li{
+    font-size: 12px;
   }
 }
 
