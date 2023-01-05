@@ -55,7 +55,7 @@ form {
 .header {
   float: left;
   width: 100%;
-  padding: 19px 5% 12px 5%;
+  padding: 19px 1% 12px 2%;
   box-sizing: border-box;
   height: 104px;
 }
@@ -66,7 +66,7 @@ form {
 
 .header ul {
   float: right;
-  margin: 28px 0 0 0;
+  margin: 28px 60px 0 0;
 }
 
 .header ul li {
@@ -1562,34 +1562,33 @@ ul#order li b {
   line-height: 28px;
   float: left;
 }
-.gender1 {
-  /* width: 50%; */
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 3px;
-}
-
-.choose1 {
-  width: calc(50% - 10px);
-  float: left;
-}
 .bibnameInput {
-  width: 50%;
+  width: calc(100% - 40%);
   margin: 0px 10px 0px 0px;
   float: left;
 }
 .bgroupInput {
-  width: calc(50% - 10px);
+  width: calc(100% - 70%);
+  float: left;
+}
+.gender1 {
+  width: calc(100% - 70%);
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 3px;
+}
+.ChooseCategory {
+  width: calc(100% - 70%);
   float: left;
 }
 .shirtInput {
-  width: 100%;
+  width: calc(100% - 70%);
   float: left;
 }
+
 .emailInput {
-  width: calc(100% - 178px);
+  width: calc(100% - 185px);
   float: left;
-  margin: 0 10px 0 0;
 }
 .emailInput input {
   width: 100%;
@@ -1606,48 +1605,82 @@ ul#order li b {
   margin: 0 10px 0 0;
 }
 
-.panInput input {
+/* .panInput input {
   width: calc(43% - 46px);
   margin-right: 17px;
+} */
+.deleteIcon {
+  color: #dd4069;
+  border: 2px solid #dd4069;
+  padding: 5px;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 5px 4px 2px 3px;
 }
+/* The typing effect */
 
 .banner h2 {
-  width: 545.5px;
+  font-size: 45px;
   color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  /* margin: 0 10%; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  text-transform: uppercase;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from {
+.text_1 {
+  animation: text1;
+}
+.text_2 {
+  animation: text2;
+}
+.text_1,
+.text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after,
+.text_2::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
     width: 0;
   }
-  to {
-    width: 20%;
+  60%,
+  90% {
+    width: 12em;
+  }
+}
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 10em;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
-}
-.banner h2::after {
-  content: '';
-  width: 5px;
-  height: 10px;
-}
 .stadiumRun .locationDetails {
   background-color: #fff6f6;
   padding: 2px;
@@ -1664,6 +1697,10 @@ ul#order li b {
   .registerFor ul li a {
     padding: 20px 6px;
   }
+  .header ul {
+    margin: 28px 2% 0 0;
+    position: relative;
+  }
 }
 @media (max-width: 1340px) {
   .header ul {
@@ -1672,8 +1709,13 @@ ul#order li b {
 }
 
 @media (max-width: 1300px) {
+  .header .logo img {
+    width: 246px;
+    height: 65px;
+    margin-top: 5px;
+  }
   .header ul {
-    margin: 28px 2% 0 0;
+    margin: 31px 0 0 0;
     position: relative;
   }
 
@@ -1723,6 +1765,9 @@ ul#order li b {
 }
 
 @media (max-width: 1200px) {
+  .header span img {
+    width: 110px;
+  }
   .header ul li a {
     margin: 0 14px;
   }
@@ -1756,13 +1801,20 @@ ul#order li b {
 }
 
 @media (max-width: 1040px) {
+  .logo {
+    display: none;
+  }
+  .header span {
+    float: left;
+  }
+
   .header ul li a {
     margin: 0 7px;
   }
 
-  .header ul {
+  /* .header ul {
     padding: 28px 0% 0 0;
-  }
+  } */
 
   .header {
     padding: 19px 2% 12px 2%;
@@ -1804,6 +1856,24 @@ ul#order li b {
 }
 
 @media (max-width: 1024px) {
+  .header ul li a {
+    font-size: 15px;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .bgroupInput {
+    width: calc(100% - 56%);
+    float: left;
+  }
+  .ChooseCategory {
+    width: calc(100% - 50%);
+    float: left;
+  }
+  .shirtInput {
+    width: calc(100% - 25%);
+    float: left;
+  }
+
   .header ul {
     position: relative;
   }
@@ -1861,9 +1931,9 @@ ul#order li b {
     width: 100%;
   }
 
-  .stadiumRun table td:first-child {
+  /* .stadiumRun table td:first-child {
     display: none;
-  }
+  } */
 
   .stadiumRun table tr:last-child td:first-child {
     display: block;
@@ -1874,6 +1944,15 @@ ul#order li b {
 }
 
 @media (max-width: 768px) {
+  .participantInput {
+    width: calc(100% - 50%);
+  }
+  .stadiumRun table td {
+    float: left;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
   .astraBlock p,
   .astraBlock .right {
     width: 100%;
@@ -2106,6 +2185,35 @@ ul#order li b {
     width: calc(100% - 225px);
     text-align: center;
   }
+  /* The typing effect */
+  @keyframes cursor {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(255, 253, 253);
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+    90%,
+    to {
+      width: 0;
+    }
+  }
+  @keyframes slide {
+    33.3333333333% {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    to {
+      font-size: 0;
+      letter-spacing: 0;
+    }
+  }
 }
 
 /* ======== 768 completed ======= */
@@ -2115,17 +2223,19 @@ ul#order li b {
     padding: 40px 20px;
   }
   .banner h2 {
-    /* padding: 0px 0px 60px 0px; */
-    width: 160px;
-    font-size: medium;
+    font-size: 25px;
   }
   .panInput input {
     width: calc(43% - 0px);
     margin-right: 17px;
   }
+  /* The typing effect */
 }
 
 @media (max-width: 414px) {
+  .banner h2 {
+    font-size: 27px;
+  }
   .stadiumRun {
     /* position:absolute; */
     top: 60%;
@@ -2157,9 +2267,13 @@ ul#order li b {
   .stadiumRun .locationDetails .locationSubDetails ul li {
     font-size: 12px;
   }
+  /* The typing effect */
 }
 
 @media (max-width: 390px) {
+  .banner h2 {
+    font-size: 25px;
+  }
   .stadiumRun {
     top: 75%;
     background-color: #ffffff;
@@ -2200,12 +2314,11 @@ ul#order li b {
   .panInput input {
     width: calc(100% - 46px);
   }
-  .banner h2 {
-    width: 160px;
-    font-size: medium;
-  }
 }
 @media (max-width: 360px) {
+  .banner h2 {
+    font-size: 20px;
+  }
   .stadiumRun {
     top: 75%;
     background-color: #ffffff;
@@ -2223,9 +2336,5 @@ ul#order li b {
   }
   .footer {
     padding: 10px;
-  }
-  .banner h2 {
-    width: 160px;
-    font-size: medium;
   }
 }
